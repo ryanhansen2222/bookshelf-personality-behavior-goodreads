@@ -2,8 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/goodreads" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/personality-prediction" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/personality-prediction-from-text" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/goodreads" vcs="" />
+    <mapping directory="$PROJECT_DIR$/personality-prediction" vcs="" />
+    <mapping directory="$PROJECT_DIR$/personality-prediction-from-text" vcs="" />
   </component>
 </project>
