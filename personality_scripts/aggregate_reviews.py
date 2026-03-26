@@ -1,7 +1,7 @@
 """
 aggregate_reviews.py
 --------------------
-Aggregates Goodreads Fantasy & Paranormal review data into per-user text blobs
+Aggregates Goodreads genre review data into per-user text blobs
 compatible with the Mehta et al. LM_extractor.py pipeline.
 
 Input files (Fantasy & Paranormal subset):
