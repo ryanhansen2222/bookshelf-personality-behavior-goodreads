@@ -1,2 +1,4 @@
 goodreads/*.gz
-
+personality_scripts/*.gz
+personality_scripts/*.json
+personality_scripts/aggregated
