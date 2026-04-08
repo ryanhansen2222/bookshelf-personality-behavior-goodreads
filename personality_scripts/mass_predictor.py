@@ -1,8 +1,6 @@
 """
-run_goodreads_pipeline.py
---------------------------
-Takes 10,000 reviews from goodreads_reviews_dedup.json.gz, runs each through
-unseen_predictor.predict(), and saves OCEAN scores to CSV.
+Takes 10,000 reviews from goodreads_reviews_dedup.json.gz, runs each through a 
+modified version of unseen_predictor.predict(), and saves OCEAN scores to a CSV.
 
 Usage:
     python run_goodreads_pipeline.py
@@ -42,9 +40,7 @@ OP_DIR         = "pkl_data/"       # must contain finetune_mlp_lm/
 FINETUNE_MODEL = "MLP_LM"
 DATASET        = "essays"
 TOKEN_LENGTH   = 512
-
 OCEAN_TRAITS = ["EXT", "NEU", "AGR", "CON", "OPN"]
-# ─────────────────────────────────────────────────────────────────────────────────
 
 
 # ── Load BERT and trait models once, reuse across all reviews ────────────────────
@@ -218,7 +214,7 @@ def run_pipeline():
 
     print(f"\nPredictions complete: {len(results)} succeeded, {n_errors} skipped.\n")
 
-    # ── Step 3: Save CSV ──────────────────────────────────────────────────────────
+    # ── Step 3: Save to CSV ───────────────────────────────────────────────────────
     print("=" * 60)
     print("STEP 3/3  Save results")
     print("=" * 60)
